@@ -4,12 +4,12 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { Spinner } from '../spinner';
 import { cn } from '../../../utils/cn';
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-[10.2px] hover:bg-black text-sm font-medium transition-colors focus-visible:outline focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-[10.2px] text-sm font-medium transition-colors focus-visible:outline focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
         default:
-          'bg-black-8 cursor-pointer border-black-15 text-gray-60 border border-black-15  shadow hover:bg-black',
+          'bg-black-8 cursor-pointer border-black-15 text-gray-60 border border-black-15  shadow',
       },
       size: {
         default: 'h-10 lg:h-14 lg:py-3 px-4.5',

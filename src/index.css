@@ -1,1 +1,159 @@
 @import 'tailwindcss';
+
+:root {
+  --primary: #24831d;
+  --light-green: rgba(36, 131, 29, 0.3);
+  --light-yellow: #f2f590;
+  --background-overlay: '';
+  --overlay-transition: 0.3s;
+  --border-radius: 0;
+  --border-block-start-width: 0px;
+  --border-inline-end-width: 0px;
+  --border-block-end-width: 0px;
+  --border-inline-start-width: 0px;
+  --border-style: initial;
+  --border-color: initial;
+  --gap: 20px 0px;
+  --content-width: min(100%, var(--container-max-width, 1140px));
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/fonts/helvetica/Helvetica.woff') format('woff');
+  font-weight: normal;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('/assets/fonts/avenir/Avenir Black.ttf') format('truetype');
+  font-weight: 900;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Regular';
+  src: url('/assets/fonts/avenir/Avenir Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-display: swap;
+}
+
+.kumbh-sans {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'YOPQ' 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-helvetica: Helvetica, sans-serif;
+  --font-avenir: 'Avenir', sans-serif;
+  --color-light-green: var(--light-green);
+  --color-primary: var(--primary);
+  --color-light-yellow: var(--light-yellow);
+  --breakpoint-xs: 550px;
+}
+
+.background-slideshow:before {
+  content: var(--background-overlay);
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: #fff0;
+  background-image: linear-gradient(0deg, #171717 0%, #22232b00 100%);
+  z-index: 2;
+  mix-blend-mode: initial;
+  opacity: 1;
+  transition: var(--overlay-transition, 0.3s);
+  border-radius: var(--border-radius);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  border-block-start-width: var(--border-block-start-width);
+  border-inline-end-width: var(--border-inline-end-width);
+  border-block-end-width: var(--border-block-end-width);
+  border-inline-start-width: var(--border-inline-start-width);
+  top: calc(0px - var(--border-block-start-width));
+  left: calc(0px - var(--border-inline-start-width));
+  width: max(
+    100% + var(--border-inline-end-width) + var(--border-inline-start-width),
+    100%
+  );
+  height: max(
+    100% + var(--border-block-start-width) + var(--border-block-end-width),
+    100%
+  );
+}
+
+.inner-content {
+  flex-wrap: initial;
+  justify-content: center;
+  align-items: initial;
+  align-content: initial;
+  flex-direction: column;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  gap: var(--gap);
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  height: 100%;
+}
+
+.title-container {
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+}
+
+.btn {
+  flex-grow: 1;
+  order: 10;
+  display: inline-block;
+  box-shadow: var(--shadow_horizontal, 0) var(--shadow_vertical, 0)
+    var(--shadow_blur, 0) var(--shadow_spread, 0) #000;
+  --shadow_horizontal: 5px;
+  --shadow_vertical: 5px;
+  --shadow_blur: 0px;
+  --shadow_spread: 0px;
+}
+
+.kenburns {
+  animation: kenburns 12s ease-out forwards;
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
