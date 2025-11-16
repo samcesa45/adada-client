@@ -188,3 +188,36 @@ export const galleryItems = [
   { src: gallery5 },
   { src: gallery6 },
 ];
+
+export const faqItems = [
+  {
+    id: '1',
+    questions: `What is the Adada Education Foundation?`,
+    answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+  {
+    id: '2',
+    questions: `Who can apply for the Adada Education Scholarship?`,
+    answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+  {
+    id: '3',
+    questions: `How can I apply for the scholarship program?`,
+    answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+  {
+    id: '4',
+    questions: `How can I apply for the scholarship program?`,
+    answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+  {
+    id: '5',
+    questions: `Are vocational and skill programs open to everyone?`,
+    answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+  {
+    id: '6',
+    questions: `How do I become an Adada Development Ambassador?`,
+    answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+];

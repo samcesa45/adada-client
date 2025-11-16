@@ -6,6 +6,7 @@ import OurPrograms from '@/components/our-programs';
 import Gallery from '@/components/gallery';
 import ImpactStories from '@/components/impact-stories';
 import UpcomingEvents from '@/components/events';
+import Faq from '@/components/faq';
 
 export const HomeRoute = () => {
   return (
@@ -19,6 +20,7 @@ export const HomeRoute = () => {
           <Gallery />
           <ImpactStories />
           <UpcomingEvents />
+          <Faq />
         </main>
       </div>
       <Footer />

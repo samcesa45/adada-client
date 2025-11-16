@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+import { itemVariants } from '../animation';
 type CardProps = {
   children: React.ReactNode;
   padding?: string;
@@ -19,10 +21,11 @@ export default function CardLayout({
   className,
 }: CardProps) {
   return (
-    <div
+    <motion.div
+      variants={itemVariants as any}
       className={`${padding} ${rounded} ${shadow} ${border} ${borderColor} ${color} ${className}`}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }

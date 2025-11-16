@@ -4,8 +4,14 @@ import SectionLayout from '../layouts/section-layout';
 import ContainerLayout from '../layouts/container-layout';
 import logoImg from '/assets/logo/adada_logo.png';
 import { Button } from '../ui/buttons';
-import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
-import { faInstagram, faXTwitter, faFacebookF} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faInstagram,
+  faXTwitter,
+  faFacebookF,
+} from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'motion/react';
+import { containerVariants, itemVariants } from '../animation';
 
 export default function Footer() {
   return (
@@ -112,14 +118,22 @@ export default function Footer() {
                   </div>
                 </form>
 
+                {/* gallery */}
                 <div>
                   <h3 className="text-white font-avenir font-black text-xl my-6">
                     Gallery
                   </h3>
-                  <div className="grid grid-cols-3 gap-3 mb-6">
+                  <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="grid grid-cols-3 gap-3 mb-6"
+                  >
                     {galleryItems.slice(0, 6).map((item, index) => (
-                      <div
+                      <motion.div
                         key={index}
+                        variants={itemVariants as any}
                         className="group relative overflow-hidden aspect-square"
                       >
                         <img
@@ -127,9 +141,9 @@ export default function Footer() {
                           alt={`Gallery ${index + 1}`}
                           className="w-full h-full object-cover cursor-pointer object-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out group-hover:scale-110"
                         />
-                      </div>
+                      </motion.div>
                     ))}
-                  </div>
+                  </motion.div>
 
                   {/* social icons */}
                   <div className="flex gap-4 items-center">
@@ -137,23 +151,24 @@ export default function Footer() {
                       to=""
                       className="text-white hover:text-primary transition-colors duration-300"
                     >
-                       <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5"/>
+                      <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5" />
                     </Link>
                     <Link
                       to=""
                       className="text-white hover:text-primary transition-colors duration-300"
                     >
-                      <FontAwesomeIcon icon={faInstagram} className="w-5 h-5"/>
+                      <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
                     </Link>
                     <Link
                       to=""
                       className="text-white hover:text-primary transition-colors duration-300"
                     >
-                      <FontAwesomeIcon icon={faXTwitter} className="w-5 h-5"/>
+                      <FontAwesomeIcon icon={faXTwitter} className="w-5 h-5" />
                     </Link>
                   </div>
                   {/* social icons */}
                 </div>
+                {/* gallery */}
               </div>
               {/*  mailing box and gallery */}
             </div>

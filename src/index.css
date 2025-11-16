@@ -188,6 +188,14 @@ html {
   border-color: var(--light-yellow);
 }
 
+.accordion-boxshadow {
+  box-shadow: var(--shadow_horizontal, 0) var(--shadow_vertical, 0)
+    var(--shadow_blur, 0) var(--shadow_spread, 0) #0000001a;
+  --shadow_horizontal: 0px;
+  --shadow_vertical: 0px;
+  --shadow_blur: 20px;
+}
+
 .kenburns {
   animation: kenburns 12s ease-out forwards;
 }
