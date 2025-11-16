@@ -2,8 +2,12 @@
 
 :root {
   --primary: #24831d;
+  --dark: #171717;
   --light-green: rgba(36, 131, 29, 0.3);
   --light-yellow: #f2f590;
+  --light-grey: #ccc;
+  --grey: #5c5c5c;
+  --silver-grey: #8c8c8c;
   --background-overlay: '';
   --overlay-transition: 0.3s;
   --border-radius: 0;
@@ -72,6 +76,10 @@ html {
   --color-light-green: var(--light-green);
   --color-primary: var(--primary);
   --color-light-yellow: var(--light-yellow);
+  --color-light-grey: var(--light-grey);
+  --color-grey: var(--grey);
+  --color-dark: var(--dark);
+  --color-silver-grey: var(--silver-grey);
   --breakpoint-xs: 550px;
 }
 
@@ -143,6 +151,41 @@ html {
   --shadow_vertical: 5px;
   --shadow_blur: 0px;
   --shadow_spread: 0px;
+}
+
+.inner-box {
+  box-shadow: var(--shadow_horizontal, 0) var(--shadow_vertical, 0)
+    var(--shadow_blur, 0) var(--shadow_spread, 0) #0000000d;
+  --shadow_horizontal: 0px;
+  --shadow_vertical: 0px;
+  --shadow_blur: 15px;
+  --shadow_spread: 0px;
+}
+.inner-box button:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  border-style: solid;
+  border-color: var(--primary);
+  box-shadow: var(--shadow_horizontal, 0) var(--shadow_vertical, 0)
+    var(--shadow_blur, 0) var(--shadow_spread, 0) #000;
+  --shadow_horizontal: 5px;
+  --shadow_vertical: 5px;
+  --shadow_blur: 0px;
+  --shadow_spread: 0px;
+}
+
+.custom-padding {
+  padding-block-start: 80px;
+  padding-block-end: 60px;
+  padding-inline-start: 80px;
+  padding-inline-end: 80px;
+}
+
+.border-width {
+  border-style: solid;
+  border-width: 55px;
+  border-color: var(--light-yellow);
 }
 
 .kenburns {

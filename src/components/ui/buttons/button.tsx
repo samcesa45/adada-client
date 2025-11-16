@@ -54,7 +54,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {isLoading && <Spinner />}
-        <span className="mx-2">{children}</span>
+        <span className="">{children}</span>
         {!isLoading && icon && <span className="ml-2">{icon}</span>}
       </Comp>
     );

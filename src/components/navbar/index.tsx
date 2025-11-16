@@ -25,13 +25,20 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li
                 key={link.id}
-                className="mr-[73px] xl:mx-[73px] hidden xl:flex"
+                className="mr-[50px] xl:mx-[50px] hidden xl:flex"
               >
                 <Link
                   to={link.url}
-                  className={`text-sm hover:text-primary text-center lg:text-[18px] lg:leading-5 text-nowrap font-avenir font-black ${location.pathname.startsWith(link.url) ? 'text-primary border-b-4 w-1/2' : ''}`}
+                  className={`group relative inline-flex transition-colors duration-300 text-sm hover:text-primary text-center lg:text-[18px] lg:leading-5 text-nowrap font-avenir font-black ${location.pathname.startsWith(link.url) ? 'text-primary' : ''}`}
                 >
-                  {link.text}
+                  {/* {link.text} */}
+                  <span className="relative inline-block">
+                    {/* text */}
+                    <span className="relative z-10">{link.text}</span>
+
+                    {/* underline */}
+                    <span className="absolute top-6 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                  </span>
                 </Link>
               </li>
             ))}
