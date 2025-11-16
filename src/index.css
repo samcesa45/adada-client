@@ -196,6 +196,18 @@ html {
   --shadow_blur: 20px;
 }
 
+.team-member-link::after {
+  content: '';
+  opacity: 0;
+  background-color: var(--primary);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  transition: 0.3s;
+}
+
 .kenburns {
   animation: kenburns 12s ease-out forwards;
 }

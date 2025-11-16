@@ -14,7 +14,7 @@ export const HomeRoute = () => {
       <Navbar />
       <Hero />
       <div className="min-h-screen w-full">
-        <main className="flex flex-col max-w-[1920px] mx-auto overflow-hidden">
+        <main className="flex flex-col mx-auto overflow-hidden">
           <Mission />
           <OurPrograms />
           <Gallery />

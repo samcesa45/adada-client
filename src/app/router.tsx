@@ -14,6 +14,14 @@ export const createAppRouter = (_queryClient: QueryClient) =>
       },
       errorElement: <ErrorBoundary />,
     },
+    {
+      path: paths.about.path,
+      lazy: async () => {
+        const { AboutRoute } = await import('./routes/landing/about/page');
+        return { Component: AboutRoute };
+      },
+      errorElement: <ErrorBoundary />,
+    },
   ]);
 
 export const AppRouter = () => {

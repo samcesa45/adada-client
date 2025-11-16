@@ -15,6 +15,11 @@ import gallery3 from '/assets/images/gallery3.jpg';
 import gallery4 from '/assets/images/gallery4.jpg';
 import gallery5 from '/assets/images/gallery5.jpg';
 import gallery6 from '/assets/images/gallery6.jpg';
+import member1Img from '/assets/images/chinedu_onuh.jpg';
+import member2Img from '/assets/images/traditonal-ruler.jpg';
+import member3Img from '/assets/images/ordinal.jpg';
+import member4Img from '/assets/images/jude.jpg';
+
 export const footerLink = [
   {
     header: 'Useful Links',
@@ -219,5 +224,32 @@ export const faqItems = [
     id: '6',
     questions: `How do I become an Adada Development Ambassador?`,
     answer: `To create a world-class educational ecosystem that empowers the youth of Enugu North Senatorial Zone to reach their full potential.`,
+  },
+];
+
+export const teamItems = [
+  {
+    id: '1',
+    src: member1Img,
+    name: `Chinedu Onu`,
+    position: `(Chairman, Board of Trustees) Adada Education Foundation`,
+  },
+  {
+    id: '2',
+    src: member2Img,
+    name: `Samuel Ikechukwu Asadu `,
+    position: `(Traditional Ruler, Chairman Enugu Traditional Rulers Council) Adada Education Foundation`,
+  },
+  {
+    id: '3',
+    src: member3Img,
+    name: `Bishop Godfrey Igwebuike Onah `,
+    position: `(Endorser of:) Adada Education Foundation`,
+  },
+  {
+    id: '4',
+    src: member4Img,
+    name: `Jude Eze`,
+    position: `( Board of Trustees) Adada Education Foundation`,
   },
 ];

@@ -1,13 +1,13 @@
 import { navLinks } from '@/constants';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logoImg from '/assets/logo/adada_logo.png';
 import { Button } from '../ui/buttons';
 import MobileNav from '../mobile-menu';
 import { useState } from 'react';
 
 export default function Navbar() {
-  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <header className="fixed top-0 left-0 w-full xl:w-[1440px] bg-white mt-0 mb-0  z-9999">
@@ -27,9 +27,12 @@ export default function Navbar() {
                 key={link.id}
                 className="mr-[50px] xl:mx-[50px] hidden xl:flex"
               >
-                <Link
+                <NavLink
                   to={link.url}
-                  className={`group relative inline-flex transition-colors duration-300 text-sm hover:text-primary text-center lg:text-[18px] lg:leading-5 text-nowrap font-avenir font-black ${location.pathname.startsWith(link.url) ? 'text-primary' : ''}`}
+                  end={link.url === '/'}
+                  className={({ isActive }) =>
+                    `group relative inline-flex transition-colors duration-300 text-sm hover:text-primary text-center lg:text-[18px] lg:leading-5 text-nowrap font-avenir font-black ${isActive ? 'text-primary' : ''}`
+                  }
                 >
                   {/* {link.text} */}
                   <span className="relative inline-block">
@@ -39,7 +42,7 @@ export default function Navbar() {
                     {/* underline */}
                     <span className="absolute top-6 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
                   </span>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
