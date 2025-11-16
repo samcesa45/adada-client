@@ -19,6 +19,9 @@ import member1Img from '/assets/images/chinedu_onuh.jpg';
 import member2Img from '/assets/images/traditonal-ruler.jpg';
 import member3Img from '/assets/images/ordinal.jpg';
 import member4Img from '/assets/images/jude.jpg';
+import ConnectIcon from '@/components/svgs/connect-icon';
+import DonateIcon from '@/components/svgs/donate-icon';
+import HelpIcon from '@/components/svgs/help-icon';
 
 export const footerLink = [
   {
@@ -251,5 +254,35 @@ export const teamItems = [
     src: member4Img,
     name: `Jude Eze`,
     position: `( Board of Trustees) Adada Education Foundation`,
+  },
+];
+
+export const whoWeAreItems = [
+  {
+    id: '1',
+    icon: HelpIcon,
+    title: `We Help`,
+    desc: `We believe that compassion is a force capable of transcending
+              boundaries and transforming lives. By translating empathy into
+              tangible actions, we strive to alleviate suffering and bring hope
+              to those facing adversity.`,
+  },
+  {
+    id: '2',
+    icon: ConnectIcon,
+    title: `We Connect`,
+    desc: `Our mission is rooted in the empowerment of communities. We work
+              towards creating opportunities for education, health, and
+              sustainable livelihoods, recognizing that empowered communities
+              are the architects of their own progress.`,
+  },
+  {
+    id: '3',
+    icon: DonateIcon,
+    title: `We Donate`,
+    desc: `We champion the principles of equality and inclusion. Our mission
+              is to dismantle barriers and create a world where every
+              individual, regardless of background or circumstance, has access
+              to the resources and opportunities necessary for a dignified life.`,
   },
 ];
