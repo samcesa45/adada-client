@@ -81,7 +81,28 @@ html {
   --color-dark: var(--dark);
   --color-silver-grey: var(--silver-grey);
   --breakpoint-xs: 550px;
+  --
 }
+
+@layer utilities {
+  .h-screen-minus-nav {
+    height: calc(100vh - 80px);
+  }
+  .h-screen-minus-nav-md {
+    height: calc(100vh - 100px);
+  }
+  .min-h-screen-minus-nav {
+    min-height: calc(100vh - 80px);
+  }
+  .min-h-screen-minus-nav-md {
+    min-height: calc(100vh - 100px);
+  }
+}
+
+.elementor-icon svg path[fill*="#"], .lakit-btn--icon svg, svg.e-font-icon-svg, svg.lakit-font-icon-svg, svg[fill=none] g[fill] path:not([fill]) {
+  fill: currentColor;
+}
+
 
 .background-slideshow:before {
   content: var(--background-overlay);

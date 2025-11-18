@@ -193,6 +193,32 @@ export const eventsItems = [
     image: event6,
   },
 ];
+export const ambassadorItems = [
+  {
+    id: '1',
+    title: 'Empowerment Through Education',
+    content: `Every ambassador's contribution funds scholarships and supports skill-building opportunities for youths in need.`,
+    image: '/assets/images/adada/hero-image.jpg',
+  },
+  {
+    id: '2',
+    title: 'Transparency & Accountability',
+    content: `All contributions are tracked through our Adada Transparency Portal, so you can see how every naira makes an impact.`,
+    image: '/assets/images/adada/about-hero.jpg',
+  },
+  {
+    id: '3',
+    title: 'Mentorship Opportunities',
+    content: `Share your experties by guiding students in academic, career planning, or entrepreneurship.`,
+    image: '/assets/images/adada/gallery5.jpg',
+  },
+  {
+    id: '4',
+    title: 'Networking & Recognition',
+    content: `Ambassadors connect with educators, business leaders, and other changemakers working toward a shared vision.`,
+    image: '/assets/images/adada/gallery10.jpg',
+  },
+];
 
 export const galleryItems = [
   { src: gallery1 },

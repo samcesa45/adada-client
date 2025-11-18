@@ -32,6 +32,16 @@ export const createAppRouter = (_queryClient: QueryClient) =>
       },
       errorElement: <ErrorBoundary />,
     },
+    {
+      path: paths.ambassadors.path,
+      lazy: async () => {
+        const { AmbassadorsRoute } = await import(
+          './routes/landing/ambassador/page'
+        );
+        return { Component: AmbassadorsRoute };
+      },
+      errorElement: <ErrorBoundary />,
+    },
   ]);
 
 export const AppRouter = () => {

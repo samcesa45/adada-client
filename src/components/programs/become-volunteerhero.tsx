@@ -4,7 +4,7 @@ import { Button } from '../ui/buttons';
 import bgImg from '/assets/images/heroImg6.jpg';
 export default function BecomeVolunteerHero() {
   return (
-    <SectionLayout className="pb-0! relative overflow-hidden">
+    <SectionLayout className="pb-0! relative overflow-hidden pt-0!">
       <div className="relative aspect-16/10 min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"

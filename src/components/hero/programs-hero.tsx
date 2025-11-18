@@ -1,4 +1,5 @@
 import heroImg5 from '/assets/images/heroImg5.jpg';
+
 export default function ProgramsHero() {
   return (
     <div className="w-full relative h-[60vh] md:h-[80vh] overflow-hidden background-slideshow mt-22 lg:mt-27">
