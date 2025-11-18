@@ -1,13 +1,14 @@
-import heroImg from '/assets/images/goodheart-img.jpg';
-import heroImg2 from '/assets/images/adada-img.jpg';
-import heroImg3 from '/assets/images/goodheart-img2.jpg';
+import heroImg from '/assets/images/adada/hero-image.jpg';
+import heroImg2 from '/assets/images/adada/hero-image2.jpg';
+import heroImg3 from '/assets/images/adada/hero-image3.jpg';
+import heroImg4 from '/assets/images/adada/hero-image4.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { Button } from '../ui/buttons';
 
-const images = [heroImg, heroImg2, heroImg3];
+const images = [heroImg, heroImg2, heroImg3, heroImg4];
 export default function Hero() {
   return (
     <div className="w-full relative h-[80vh] md:h-screen overflow-hidden background-slideshow mt-22 lg:mt-27">

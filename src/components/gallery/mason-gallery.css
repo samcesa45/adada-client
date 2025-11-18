@@ -1,0 +1,30 @@
+.gallery-swiper {
+  padding-bottom: 50px;
+}
+
+.gallery-swiper .swiper-pagination {
+  bottom: 10px;
+}
+
+.gallery-swiper .swiper-button-next,
+.gallery-swiper .swiper-button-prev {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.gallery-swiper .swiper-button-next:hover,
+.gallery-swiper .swiper-button-prev:hover {
+  color: var(--primary);
+  --primary: #24831d;
+}
+
+.gallery-swiper .swiper-button-next:after,
+.gallery-swiper .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: var(--primary);
+  --primary: #24831d;
+}

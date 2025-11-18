@@ -9,19 +9,25 @@ import event3 from '/assets/images/goodheart-event3.jpg';
 import event4 from '/assets/images/goodheart-event4.jpg';
 import event5 from '/assets/images/goodheart-event5.jpg';
 import event6 from '/assets/images/goodheart-event6.jpg';
-import gallery1 from '/assets/images/gallery1.jpg';
-import gallery2 from '/assets/images/gallery2.jpg';
-import gallery3 from '/assets/images/gallery3.jpg';
-import gallery4 from '/assets/images/gallery4.jpg';
-import gallery5 from '/assets/images/gallery5.jpg';
-import gallery6 from '/assets/images/gallery6.jpg';
-import member1Img from '/assets/images/chinedu_onuh.jpg';
-import member2Img from '/assets/images/traditonal-ruler.jpg';
-import member3Img from '/assets/images/ordinal.jpg';
-import member4Img from '/assets/images/jude.jpg';
+import gallery1 from '/assets/images/adada/gallery1.jpg';
+import gallery2 from '/assets/images/adada/gallery2.jpg';
+import gallery3 from '/assets/images/adada/gallery3.jpg';
+import gallery4 from '/assets/images/adada/gallery4.jpg';
+import gallery5 from '/assets/images/adada/gallery5.jpg';
+import gallery6 from '/assets/images/adada/gallery6.jpg';
+import gallery7 from '/assets/images/adada/gallery7.jpg';
+import gallery8 from '/assets/images/adada/gallery8.jpg';
+import gallery9 from '/assets/images/adada/gallery9.jpg';
+import gallery10 from '/assets/images/adada/gallery10.jpg';
+import member1Img from '/assets/images/adada/chinedu-onuh.jpg';
+import member2Img from '/assets/images/adada/traditonal-ruler.jpg';
+import member3Img from '/assets/images/adada/OIP (1).webp';
+import member4Img from '/assets/images/adada/jude-eze.jpg';
+import member5Img from '/assets/images/adada/obike-hilary.webp';
 import ConnectIcon from '@/components/svgs/connect-icon';
 import DonateIcon from '@/components/svgs/donate-icon';
 import HelpIcon from '@/components/svgs/help-icon';
+import client1 from '/assets/images/goodheart-event3.jpg';
 
 export const footerLink = [
   {
@@ -195,6 +201,10 @@ export const galleryItems = [
   { src: gallery4 },
   { src: gallery5 },
   { src: gallery6 },
+  { src: gallery7 },
+  { src: gallery8 },
+  { src: gallery9 },
+  { src: gallery10 },
 ];
 
 export const faqItems = [
@@ -255,6 +265,12 @@ export const teamItems = [
     name: `Jude Eze`,
     position: `( Board of Trustees) Adada Education Foundation`,
   },
+  {
+    id: '5',
+    src: member5Img,
+    name: `Obike Hilary`,
+    position: `( Pro ) Adada Education Foundation`,
+  },
 ];
 
 export const whoWeAreItems = [
@@ -284,5 +300,42 @@ export const whoWeAreItems = [
               is to dismantle barriers and create a world where every
               individual, regardless of background or circumstance, has access
               to the resources and opportunities necessary for a dignified life.`,
+  },
+];
+
+export const mainGalleryItems = [
+  { src: gallery1, cols: 1 },
+  { src: gallery2, cols: 2 },
+  { src: gallery3, cols: 1 },
+  { src: gallery4, cols: 1 },
+  { src: gallery5, cols: 1 },
+  { src: gallery6, cols: 1 },
+  { src: gallery7, cols: 1 },
+  { src: gallery8, cols: 1 },
+  { src: gallery9, cols: 1 },
+  { src: gallery10, cols: 1 },
+];
+
+export const testimonialItems = [
+  {
+    id: '1',
+    desc: `Over 500 students reached through scholarship mentorship and training`,
+    src: client1,
+    name: `John Doe`,
+    position: `anonymous`,
+  },
+  {
+    id: '2',
+    desc: `20+ skills training sessions conducted across local communities.`,
+    src: client1,
+    name: `Mike Doe`,
+    position: `anonymous`,
+  },
+  {
+    id: '3',
+    desc: `Collaborations with UNN and local NGOs for digital literacy projects`,
+    src: client1,
+    name: `James Doe`,
+    position: `anonymous`,
   },
 ];

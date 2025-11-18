@@ -1,30 +1,7 @@
-// import masonry1 from '/assets/images/chief1.jpg';
-// import masonry2 from '/assets/images/jude.jpg';
-// import masonry3 from '/assets/images/ordinal.jpg';
-// import masonry4 from '/assets/images/cardinal.jpg';
-// import masonry5 from '/assets/images/chinedu_onuh.jpg';
-// import masonry6 from '/assets/images/jude.jpg';
-// import masonry7 from '/assets/images/chief1.jpg';
 import MasonryGallery from './masonry-gallery';
 import SectionLayout from '../layouts/section-layout';
 import ContainerLayout from '../layouts/container-layout';
-import event1 from '/assets/images/goodheart-event1.jpg';
-import event2 from '/assets/images/goodheart-event2.jpg';
-import event3 from '/assets/images/goodheart-event3.jpg';
-import event4 from '/assets/images/goodheart-event4.jpg';
-import event5 from '/assets/images/goodheart-event5.jpg';
-import event6 from '/assets/images/goodheart-event6.jpg';
-import event7 from '/assets/images/goodheart-img.jpg';
-
-const items = [
-  { src: event1, cols: 1 },
-  { src: event2, cols: 2 },
-  { src: event3, cols: 1 },
-  { src: event4, cols: 1 },
-  { src: event5, cols: 1 },
-  { src: event7, cols: 2 },
-  { src: event6, cols: 1 },
-];
+import { mainGalleryItems } from '@/constants';
 
 export default function Gallery() {
   return (
@@ -41,10 +18,10 @@ export default function Gallery() {
         <div>
           {/*Masonry Grid*/}
           <MasonryGallery
-            items={items}
+            items={mainGalleryItems}
             defaultCols={4}
             gap={24}
-            rowHeight={100}
+            rowHeight={50}
           />
           {/* Masonry Grid */}
         </div>
