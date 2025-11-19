@@ -11,8 +11,8 @@ import { Button } from '../ui/buttons';
 const images = [heroImg, heroImg2, heroImg3, heroImg4];
 export default function Hero() {
   return (
-    <div className="w-full relative  overflow-hidden pt-[90px] md:pt-[110px]">
-     <div className="absolute top-0 left-0 w-full h-full background-slideshow">
+    <div className="relative w-full min-h-[500px] pt-[200px] md:h-dvh  sm:pt-28 overflow-hidden">
+     <div className="absolute inset-0">
         <Swiper
           modules={[Autoplay, EffectFade]}
           effect="fade"
@@ -36,10 +36,12 @@ export default function Hero() {
           ))}
         </Swiper>
       </div>
-      <div className="relative z-3 flex flex-col justify-center min-h-[calc(90vh-90px)] md:min-h-[calc(100vh-110px)]">
-        <div className="w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-20 py-8">
-          <div className="max-w-full md:max-w-[500px] lg:max-w-[1000px]">
-            <p className="text-white uppercase text-base sm:text-lg font-avenir font-extrabold tracking-[.15em] mb-5">
+      <div className='background-slideshow'></div>
+
+      <div className="relative z-3 flex flex-col justify-center h-full">
+        <div className="px-4 sm:px-6 md:px-8 lg:px-20 py-8 w-full max-w-7xl">
+          <div className="">
+            <p className="text-white uppercase text-sm sm:text-lg font-avenir font-extrabold tracking-[.15em] mb-5">
               Together, we are building opportunities through scholarships,
               mentorship, and skill development.
             </p>
@@ -49,12 +51,17 @@ export default function Hero() {
               </h1>
             </div>
           </div>
-          <div className="btn mt-8 w-full xs:w-auto">
-            <Button className="bg-primary w-full xs:w-auto hover:bg-light-yellow! hover:text-black text-white font-avenir! font-bold text-base leading-5 px-10 py-[25px]! rounded-none border-0">
+          <div className="hidden btn md:block w-full mt-8 sm:w-[196px]">
+            <Button className="bg-primary w-full md:w-[196px]  hover:bg-light-yellow! hover:text-black text-white font-avenir! font-bold text-base leading-5 px-10 py-[25px]! rounded-none border-0">
               Apply for support
             </Button>
           </div>
         </div>
+      </div>
+      <div className="md:hidden absolute z-2 bottom-0 w-full">
+        <Button className="bg-primary w-full hover:bg-light-yellow hover:text-black text-white font-avenir font-bold text-lg py-6 rounded-none border-0 transition-colors duration-300">
+          Apply for support
+        </Button>
       </div>
     </div>
   );
