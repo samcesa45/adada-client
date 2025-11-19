@@ -36,7 +36,7 @@ export default function DonationGoalTracker({
         <p className="text-center my-6 text-sm font-semibold font-avenir text-grey">
           {percentage.toFixed(0)}% Complete
         </p>
-        <div className="btn">
+        <div className="btn inline-block">
           <Button
             onClick={() => setOpen(true)}
             className="bg-light-yellow uppercase hover:bg-primary hover:text-white text-dark font-avenir font-bold text-lg py-6 rounded-none border-0 transition-colors duration-300"

@@ -3,16 +3,36 @@ import { Link, NavLink } from 'react-router-dom';
 import logoImg from '/assets/logo/adada_logo.png';
 import { Button } from '../ui/buttons';
 import MobileNav from '../mobile-menu';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { cn } from '@/utils/cn';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full xl:w-[1440px] bg-white mt-0 mb-0  z-9999">
+      <header className={cn("fixed top-0 left-0 w-full xl:w-[1440px] bg-white mt-0 mb-0  z-9999", isScrolled ? 'shadow-sm' :'')}>
         <nav className="h-[90px] px-4 lg:px-20 xl:h-[110px] flex items-center w-full justify-between">
           <div className="mr-8 lg:mr-[90.5px] flex-1">
+            <Link to='/'>
             <img
               width={100}
               height={100}
@@ -20,6 +40,7 @@ export default function Navbar() {
               src={logoImg}
               alt="logo Image"
             />
+            </Link>
           </div>
           <ul className="flex items-center">
             {navLinks.map((link) => (

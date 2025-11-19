@@ -46,13 +46,13 @@ export default function Hero() {
               mentorship, and skill development.
             </p>
             <div className="h-full title-container lg:mb-5">
-              <h1 className="text-white text-[32px] sm:text-[42px] lg:text-[90px] leading-[1.1em] tracking-wide font-avenir font-black">
+              <h1 className="font-avenir! text-white text-[32px] sm:text-[42px] lg:text-[90px] leading-[1.1em] tracking-wide font-black">
                 Empowering Enugu North's Future Through Education
               </h1>
             </div>
           </div>
-          <div className="hidden btn md:block w-full mt-8 sm:w-[196px]">
-            <Button className="bg-primary w-full md:w-[196px]  hover:bg-light-yellow! hover:text-black text-white font-avenir! font-bold text-base leading-5 px-10 py-[25px]! rounded-none border-0">
+          <div className="hidden btn md:inline-block  w-full mt-8 sm:w-[196px]">
+            <Button className="bg-primary  w-full md:w-[196px]  hover:bg-light-yellow! hover:text-black text-white font-avenir! font-bold text-base leading-5 px-10 py-[25px]! rounded-none border-0">
               Apply for support
             </Button>
           </div>

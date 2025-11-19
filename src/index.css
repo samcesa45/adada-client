@@ -169,7 +169,7 @@ svg[fill='none'] g[fill] path:not([fill]) {
 .btn {
   /* flex-grow: 1;
   order: 10; */
-  display: inline-block;
+  /* display: inline-block; */
   box-shadow: var(--shadow_horizontal, 0) var(--shadow_vertical, 0)
     var(--shadow_blur, 0) var(--shadow_spread, 0) #000;
   --shadow_horizontal: 5px;
