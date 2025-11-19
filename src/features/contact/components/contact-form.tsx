@@ -7,7 +7,7 @@ import {
 import type { UseFormReturn } from 'react-hook-form';
 import { toast } from 'sonner';
 import { Mail } from 'lucide-react';
-import { Form, Input } from '@/components/ui/back-to-top/form';
+import { Form, Input } from '@/components/ui/form';
 import { Button } from '@/components/ui/buttons';
 import { formatErrors } from '@/lib/utils';
 

@@ -41,12 +41,12 @@ export default function Hero() {
       <div className="relative z-3 flex flex-col justify-center h-full">
         <div className="px-4 sm:px-6 md:px-8 lg:px-20 py-8 w-full max-w-7xl">
           <div className="">
-            <p className="text-white uppercase text-sm sm:text-lg font-avenir font-extrabold tracking-[.15em] mb-5">
+            <p className="text-white uppercase text-sm sm:text-[18px] tracking-normal font-avenir font-extrabold md:tracking-[0.15em] mb-5">
               Together, we are building opportunities through scholarships,
               mentorship, and skill development.
             </p>
             <div className="h-full title-container lg:mb-5">
-              <h1 className="text-white text-[32px] sm:text-[42px] lg:text-[72px] leading-[1.1em] font-avenir font-black">
+              <h1 className="text-white text-[32px] sm:text-[42px] lg:text-[90px] leading-[1.1em] tracking-wide font-avenir font-black">
                 Empowering Enugu North's Future Through Education
               </h1>
             </div>

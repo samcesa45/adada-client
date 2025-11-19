@@ -345,10 +345,10 @@ export const mainGalleryItems = [
 export const testimonialItems = [
   {
     id: '1',
-    desc: `Over 500 students reached through scholarship mentorship and training`,
+    desc: `Because of Adada Foundation, I'm now studying Engineering at UNN`,
     src: client1,
-    name: `John Doe`,
-    position: `anonymous`,
+    name: `Chinedu`,
+    position: `Adada Scholar 2024`,
   },
   {
     id: '2',
@@ -364,4 +364,13 @@ export const testimonialItems = [
     name: `James Doe`,
     position: `anonymous`,
   },
+];
+
+export const currencies = [
+  { code: 'NGN', symbol: '₦', name: 'Naira' },
+  { code: 'USD', symbol: '$', name: 'US Dollar' },
+  { code: 'EUR', symbol: '€', name: 'Euro' },
+  { code: 'CAD', symbol: 'C$', name: 'Canadian Dollar' },
+  { code: 'GBP', symbol: '£', name: 'Pound Sterling' },
+  { code: 'GHS', symbol: '₵', name: 'Ghana Cedis' },
 ];

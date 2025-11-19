@@ -9,9 +9,13 @@ export default function OurPrograms() {
   return (
     <SectionLayout className="bg-primary">
       <ContainerLayout>
-        <h2 className="font-avenir text-center text-white  text-3xl sm:text-[40px] leading-10 font-bold mb-4 md:mb-8">
-          Our Programs
-        </h2>
+        {/* Header */}
+        <div className="text-center pb-6 sm:pb-10">
+          <h2 className="text-white font-avenir font-black text-4xl sm:text-[42px] md:text-[56px] 2xl:text-[72px] leading-[1.1em]">
+            Our Programs
+          </h2>
+          <div className="border-light-yellow mx-auto border-4 lg:border-6 w-20 sm:w-24 my-3"></div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-[60px] items-center">
           <CardLayout className="bg-white shadow-none border-0 rounded-xl p-6 max-w-[681px] max-h-[300px]">
             <h3 className="font-avenir  text-3xl sm:text-[32px] leading-10 font-bold mb-4">

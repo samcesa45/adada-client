@@ -7,13 +7,12 @@ export default function Gallery() {
   return (
     <SectionLayout>
       <ContainerLayout>
-        <div className="mb-6 md:mb-8 text-center">
-          <h4 className="font-kumbhSans fontx-bold mb-3 text-[14px] leading-[18px] tracking-[1.8px] opacity-90 uppercase text-[#28282E]">
-            PORTFOLIO
-          </h4>
-          <h3 className="font-kumbhSans font-semibold text-[#28282E] text-[24px] -tracking-[0.2px] mb-3.5 leading-7 md:text-[47px] md:leading-[52px] ">
+        {/* Header */}
+        <div className="text-center pb-6 sm:pb-10">
+          <h2 className="text-dark font-avenir font-black text-4xl sm:text-[42px] md:text-[56px] 2xl:text-[72px] leading-[1.1em]">
             Our Gallery
-          </h3>
+          </h2>
+          <div className="border-light-yellow mx-auto border-4 lg:border-6 w-20 sm:w-24 my-3"></div>
         </div>
         <div>
           {/*Masonry Grid*/}

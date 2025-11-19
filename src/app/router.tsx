@@ -50,6 +50,14 @@ export const createAppRouter = (_queryClient: QueryClient) =>
       },
       errorElement: <ErrorBoundary />,
     },
+    {
+      path: paths.donate.path,
+      lazy: async () => {
+        const { DonationRoute } = await import('./routes/landing/donate/page');
+        return { Component: DonationRoute };
+      },
+      errorElement: <ErrorBoundary />,
+    },
   ]);
 
 export const AppRouter = () => {

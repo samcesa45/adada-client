@@ -1,5 +1,5 @@
 import { navLinks } from '@/constants';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logoImg from '/assets/logo/adada_logo.png';
 import { Button } from '../ui/buttons';
 import MobileNav from '../mobile-menu';
@@ -47,9 +47,11 @@ export default function Navbar() {
             ))}
           </ul>
           <div className="inline-block  ml-[73px] mr-6.5">
-            <Button className="bg-primary hover:bg-light-yellow! hover:text-black text-white font-avenir! font-bold text-base leading-5 px-[13px] py-[25px]text-white rounded-none border-0">
-              Donate Now
-            </Button>
+            <Link to={'/donate'}>
+              <Button className="bg-primary hover:bg-light-yellow! hover:text-black text-white font-avenir! font-bold text-base leading-5 px-[13px] py-[25px]text-white rounded-none border-0">
+                Donate Now
+              </Button>
+            </Link>
           </div>
           {/* hamburger */}
           <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
