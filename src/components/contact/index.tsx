@@ -11,7 +11,7 @@ export default function Contact() {
             <div className="px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
               {/* Header */}
               <div className="pb-6 sm:pb-10">
-               <h2 className="text-dark font-avenir font-black text-2xl md:text-[32px] leading-[1.1em]">
+                <h2 className="text-dark font-avenir font-black text-2xl md:text-[32px] leading-[1.1em]">
                   Contact info
                 </h2>
                 <div className="border-light-yellow border-4 lg:border-6 w-20 sm:w-24 my-3"></div>

@@ -48,8 +48,10 @@ export default function MapWithMarkers() {
               {address}
             </div>
             <div className="text-sm bg-white py-1 px-3">
-              <p className='font-avenir font-semibold'>📞 +234 812 345 6789</p>
-              <p className='font-avenir font-semibold'>✉️ info@adadafoundation.org</p>
+              <p className="font-avenir font-semibold">📞 +234 812 345 6789</p>
+              <p className="font-avenir font-semibold">
+                ✉️ info@adadafoundation.org
+              </p>
             </div>
           </Popup>
         </Marker>
