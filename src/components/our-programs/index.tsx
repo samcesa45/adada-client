@@ -12,7 +12,6 @@ export default function OurPrograms() {
         <h2 className="font-avenir text-center text-white  text-3xl sm:text-[40px] leading-10 font-bold mb-4 md:mb-8">
           Our Programs
         </h2>
-        <CardLayout className="bg-primary! px-6 py-8 shadow-none border-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-[60px] items-center">
             <CardLayout className="bg-white shadow-none border-0 rounded-xl p-6 max-w-[681px] max-h-[300px]">
               <h3 className="font-avenir  text-3xl sm:text-[32px] leading-10 font-bold mb-4">
@@ -31,8 +30,7 @@ export default function OurPrograms() {
               <img src={graduateImg} alt="Graduate Image" />
             </div>
           </div>
-        </CardLayout>
-        <div className="mt-8 mx-8">
+        <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-[60px] items-center">
             <div className="lg:-mt-16">
               <img src={giftImg} alt="Gift Image" />

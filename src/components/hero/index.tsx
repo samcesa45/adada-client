@@ -12,7 +12,7 @@ const images = [heroImg, heroImg2, heroImg3, heroImg4];
 export default function Hero() {
   return (
     <div className="w-full relative  overflow-hidden pt-[90px] md:pt-[110px]">
-     <div className="absolute top-0 left-0 w-full h-[82vh] md:h-full background-slideshow">
+     <div className="absolute top-0 left-0 w-full h-full background-slideshow">
         <Swiper
           modules={[Autoplay, EffectFade]}
           effect="fade"
@@ -36,7 +36,7 @@ export default function Hero() {
           ))}
         </Swiper>
       </div>
-      <div className="relative z-3 flex flex-col justify-center min-h-[calc(100vh-90px)] md:min-h-[calc(100vh-110px)]">
+      <div className="relative z-3 flex flex-col justify-center min-h-[calc(90vh-90px)] md:min-h-[calc(100vh-110px)]">
         <div className="w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-20 py-8">
           <div className="max-w-full md:max-w-[500px] lg:max-w-[1000px]">
             <p className="text-white uppercase text-base sm:text-lg font-avenir font-extrabold tracking-[.15em] mb-5">
