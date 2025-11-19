@@ -12,7 +12,7 @@ const images = [heroImg, heroImg2, heroImg3, heroImg4];
 export default function Hero() {
   return (
     <div className="relative w-full min-h-[500px] pt-[200px] md:h-dvh  sm:pt-28 overflow-hidden">
-     <div className="absolute inset-0">
+      <div className="absolute inset-0">
         <Swiper
           modules={[Autoplay, EffectFade]}
           effect="fade"
@@ -36,7 +36,7 @@ export default function Hero() {
           ))}
         </Swiper>
       </div>
-      <div className='background-slideshow'></div>
+      <div className="background-slideshow"></div>
 
       <div className="relative z-3 flex flex-col justify-center h-full">
         <div className="px-4 sm:px-6 md:px-8 lg:px-20 py-8 w-full max-w-7xl">
@@ -46,7 +46,7 @@ export default function Hero() {
               mentorship, and skill development.
             </p>
             <div className="h-full title-container lg:mb-5">
-              <h1 className="text-white text-[32px] sm:text-[42px] lg:text-[90px] leading-[1.1em] font-avenir font-black">
+              <h1 className="text-white text-[32px] sm:text-[42px] lg:text-[72px] leading-[1.1em] font-avenir font-black">
                 Empowering Enugu North's Future Through Education
               </h1>
             </div>
@@ -66,5 +66,3 @@ export default function Hero() {
     </div>
   );
 }
-
-
