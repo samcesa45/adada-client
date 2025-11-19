@@ -43,10 +43,7 @@ export default function JoinTheMovement() {
             {howItworksItems.map((item) => {
               const Icon = item.icon;
               return (
-                <div
-                  key={item.id}
-                  className="flex  md:gap-x-6"
-                >
+                <div key={item.id} className="flex  md:gap-x-6">
                   <div className="elementor-icon mb-4 md:mb-8">
                     <Icon className="text-light-yellow w-[102px] h-[60px]" />
                   </div>
@@ -71,24 +68,23 @@ export default function JoinTheMovement() {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="flex flex-col justify-center absolute top-1/2 lg:top-[60%] left-[20%] -translate-x-[10%] md:left-[50%] md:-translate-x-1/2 -translate-y-1/2">
-           <div className='w-full max-w-7xl md:max-w-4xl lg:mx-8'>
-            <CardLayout className="rounded-0 shadow-none border-0 bg-primary! min-w-full max-w-4xl">
-              <h2 className="text-white font-avenir font-black text-nowrap text-xl mb-2 sm:text-[32px] md:text-[56px] 2xl:text-[72px] leading-[1.1em]">
-                Join the Movement
-              </h2>
-              <p className="font-avenir font-medium text-white sm:text-[22px] leading-[1.5em]">
-                Your involvement fuels the vision of an educated and empowered
-                Enugu North. Together, we can build a future where every child's
-                dream is within reach.
-              </p>
-            </CardLayout>
+            <div className="w-full max-w-7xl md:max-w-4xl lg:mx-8">
+              <CardLayout className="rounded-0 shadow-none border-0 bg-primary! min-w-full max-w-4xl">
+                <h2 className="text-white font-avenir font-black text-nowrap text-xl mb-2 sm:text-[32px] md:text-[56px] 2xl:text-[72px] leading-[1.1em]">
+                  Join the Movement
+                </h2>
+                <p className="font-avenir font-medium text-white sm:text-[22px] leading-[1.5em]">
+                  Your involvement fuels the vision of an educated and empowered
+                  Enugu North. Together, we can build a future where every
+                  child's dream is within reach.
+                </p>
+              </CardLayout>
               <div className="flex gap-4 pt-6 w-full inner-box md:pt-8">
-              <Button className="text-white h-12 w-full! lg:order-2 lg:h-16 hover:bg-primary hover:text-white font-semibold rounded-none shadow-none font-avenir uppercase">
-              Become an ambassador
-            </Button>
+                <Button className="text-white h-12 w-full! lg:order-2 lg:h-16 hover:bg-primary hover:text-white font-semibold rounded-none shadow-none font-avenir uppercase">
+                  Become an ambassador
+                </Button>
               </div>
-
-           </div>
+            </div>
           </div>
         </div>
       </div>

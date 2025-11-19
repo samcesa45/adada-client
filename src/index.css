@@ -81,7 +81,6 @@ html {
   --color-dark: var(--dark);
   --color-silver-grey: var(--silver-grey);
   --breakpoint-xs: 550px;
-  --
 }
 
 @layer utilities {
@@ -99,10 +98,13 @@ html {
   }
 }
 
-.elementor-icon svg path[fill*="#"], .lakit-btn--icon svg, svg.e-font-icon-svg, svg.lakit-font-icon-svg, svg[fill=none] g[fill] path:not([fill]) {
+.elementor-icon svg path[fill*='#'],
+.lakit-btn--icon svg,
+svg.e-font-icon-svg,
+svg.lakit-font-icon-svg,
+svg[fill='none'] g[fill] path:not([fill]) {
   fill: currentColor;
 }
-
 
 .background-slideshow:before {
   content: var(--background-overlay);
@@ -239,34 +241,4 @@ html {
   to {
     transform: scale(1.12);
   }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.8s ease-out both;
-}
-
-.animate-slideUp {
-  animation: slideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

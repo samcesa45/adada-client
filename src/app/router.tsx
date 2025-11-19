@@ -42,6 +42,14 @@ export const createAppRouter = (_queryClient: QueryClient) =>
       },
       errorElement: <ErrorBoundary />,
     },
+    {
+      path: paths.contactUs.path,
+      lazy: async () => {
+        const { ContactRoute } = await import('./routes/landing/contact/page');
+        return { Component: ContactRoute };
+      },
+      errorElement: <ErrorBoundary />,
+    },
   ]);
 
 export const AppRouter = () => {
